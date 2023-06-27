@@ -11,11 +11,17 @@
   int _printf(const char *format, ...)
   {
     int j;
+    int count = 0;
+    int temp = 0;
+    
+    if(format == NULL)
+        return -1;
 
     for(j = 0; format[j]; j++)
     {
-        write(1, &format[j], 1);
+        temp = write(1, &format[j], 1);
+        count += temp;
     }
 
-    return 0;
+    return count;
   }
