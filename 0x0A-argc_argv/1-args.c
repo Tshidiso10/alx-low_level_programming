@@ -7,7 +7,8 @@ int main (int argc, char **argv)
 
     for (i = 0; i == argc; i++)
     {
-        printf("%d\n", i);
+ 	 (void) argv;
+        printf("%d\n", argc);
     }
     return 0;
 }
