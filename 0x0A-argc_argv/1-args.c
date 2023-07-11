@@ -11,7 +11,11 @@
 
 int main (int argc, char **argv[])
 {
+<<<<<<< HEAD
  	(void) argv;
+=======
+ 	 (void) argv;
+>>>>>>> 1a30ae052af103479140c502147a4bb57f64c985
         printf("%d\n", argc);
 
     return 0;
