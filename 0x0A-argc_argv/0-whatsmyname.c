@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
 
 
@@ -11,9 +10,13 @@
  * Return:0 
  */
 
-int main (int argc, char **argv[])
+int main(int argc, char **argv[])
 {
-        printf("%s", *argv)
+    int i;
 
+    for (i = 0; i < argc; i++)
+    {
+        printf("argv[%2d]: %s\n", counter, argv[i]);
+    }
     return 0;
 }
