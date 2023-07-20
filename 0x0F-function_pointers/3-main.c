@@ -13,7 +13,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 	int num1;
 	int num2;
-	char *opr;
+	char *op;
 
 	if (argc != 4)
 	{
@@ -22,17 +22,17 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	}
 
 	num1 = atoi(argv[1]);
-	opr = argv[2];
+	op = argv[2];
 	num2 = atoi(argv[3]);
 
-	if (get_op_func(opr) == NULL || opr[1] != '\0')
+	if (get_op_func(op) == NULL || op[1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	if ((*opr == '/' && num2 == 0) ||
-	    (*opr == '%' && num2 == 0))
+	if ((*op == '/' && num2 == 0) ||
+	    (*op == '%' && num2 == 0))
 	{
 		printf("Error\n");
 		exit(100);
